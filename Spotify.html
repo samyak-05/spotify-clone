@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Photos/logo.png">
+    <title>Spotify-Web Player: Music for Everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Spotify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="navigation-bar">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+
+                <div class="nav-option">
+                    <i class="fas fa-search"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+
+            <div class="library">
+                <div class="head">
+                    <div class="lib"><img src="./Photos/library_icon.png" alt="lib-logo"> Your Library </div>
+                    <div class="icons"><i class="fa-solid fa-plus"></i> <i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+
+                <div class="box">
+                    <p class="title">
+                        Create your first playlist
+                    </p>
+
+                    <p class="caption">
+                        Its easy, we'll help you
+                    </p>
+
+                    <button class="btn-lib" type="button"> Create playlist</button>
+                </div>
+
+                <div class="box">
+                    <p class="title">
+                        Lets find some podcasts to follow
+                    </p>
+
+                    <p class="caption">
+                        We'll keep you updated about new episodes
+                    </p>
+
+                    <button class="btn-lib" type="button">Browse podcasts</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="main-top">
+                <div class="nav-top">
+                    <img src="./Photos/backward_icon.png">
+                    <img src="./Photos/forward_icon.png" class="hide">
+                </div>
+                <div class="nav-btn">
+                    <button class="btn-lib nav-item hide" type="button">Explore Premium</button>
+                    <button class="btn-lib nav-item " type="button" style="color: white; background-color: black;"><i
+                            class="fa-solid fa-circle-down"></i> Install App</button>
+                    <i class="fa-solid fa-user nav-item profile"></i>
+                </div>
+
+            </div>
+
+            <h2>Recently played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./Photos/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 Global</p>
+                    <p class="card-desc">Trending tracks in the world right now</p>
+                    <img class="play" src="./Photos/play.png">
+                </div>
+
+                <div class="card">
+                    <img src="./Photos/wavy.png" class="card-img">
+                    <p class="card-title">Wavy</p>
+                    <p class="card-desc">Karan Aujla</p>
+                    <img class="play" src="./Photos/play.png">
+                </div>
+
+
+                <div class="card">
+                    <img src="./Photos/starboy.png" class="card-img">
+                    <p class="card-title">Starboy</p>
+                    <p class="card-desc">The Weeknd, Daft Punk</p>
+                    <img class="play" src="./Photos/play.png">
+                </div>
+            </div>
+
+            <h2>For You</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./Photos/shivshankar.png" class="card-img">
+                    <p class="card-title">Jai Jai Shivshankar (From "War")</p>
+                    <p class="card-desc">Vishal Dadlani, T-Series</p>
+                    <img class="play" src="./Photos/play.png">
+                </div>
+                <div class="card">
+                    <img src="./Photos/sang.png" class="card-img">
+                    <p class="card-title">Tenu Sang Rakhna (From "Jigra")</p>
+                    <p class="card-desc">Achint, Arijit Singh, Anumita Nadesan</p>
+                    <img class="play" src="./Photos/play.png">
+                </div>
+                <div class="card">
+                    <img src="./Photos/card2img.jpeg" class="card-img">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <p class="card-desc">Darshan Raval</p>
+                    <img class="play" src="./Photos/play.png">
+                </div>
+
+                <div class="card">
+                    <img src="./Photos/chaleya.png" class="card-img">
+                    <p class="card-title">Chaleya (From "Jawan")</p>
+                    <p class="card-desc">Anirudh Ravichander, Arijit Singh, Shilpa Rao</p>
+                    <img class="play" src="./Photos/play.png">
+                </div>
+
+                <div class="card">
+                    <img src="./Photos/sher.png" class="card-img">
+                    <p class="card-title">Sher Khul Gaye (From "Fighter")</p>
+                    <p class="card-desc">Vishal-Shekhar, Vishal Dadlani, Benny Dayal</p>
+                    <img class="play" src="./Photos/play.png">
+                </div>
+            </div>
+
+            <h2>Playlists</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./Photos/msd.png" class="card-img">
+                    <p class="card-title">MS. Dhoni All Songs</p>
+                    <p class="card-desc">By Diya</p>
+                    <img class="play" src="./Photos/play.png">
+                </div>
+                <div class="card">
+                    <img src="./Photos/arijit.png" class="card-img">
+                    <p class="card-title">Arijit Singh All Songs <span style="color: red;">&#10084;</span></p>
+                    <p class="card-desc">By Indian Playlists</p>
+                    <img class="play" src="./Photos/play.png">
+                </div>
+                <div class="card">
+                    <img src="./Photos/card6img.jpeg" class="card-img">
+                    <p class="card-title">Top Songs- India</p>
+                    <p class="card-desc">Weekly Music Charts</p>
+                    <img class="play" src="./Photos/play.png">
+                </div>
+            </div>
+
+            <h2>Podcasts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./Photos/bb.png" class="card-img">
+                    <p class="card-title">The Ranveer Show</p>
+                    <p class="card-desc">Beer Biceps</p>
+                </div>
+                <div class="card">
+                    <img src="./Photos/raj.png" class="card-img">
+                    <p class="card-title">Raj Shamani's Figuring Out</p>
+                    <p class="card-desc">Raj Shamani</p>
+                </div>
+                <div class="card">
+                    <img src="./Photos/dhruv.png" class="card-img">
+                    <p class="card-title">Dhruv Rathee</p>
+                    <p class="card-desc">Dhruv Rathee</p>
+                </div>
+                <div class="card">
+                    <img src="./Photos/bbc.png" class="card-img">
+                    <p class="card-title">World of Secrets</p>
+                    <p class="card-desc">BBC</p>
+                </div>
+            </div>
+
+           
+            <footer class="spotify-footer">
+  <div class="footer-columns">
+    <div class="footer-column">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">For the Record</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Communities</h4>
+      <ul>
+        <li><a href="#">For Artists</a></li>
+        <li><a href="#">Developers</a></li>
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Investors</a></li>
+        <li><a href="#">Vendors</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Useful Links</h4>
+      <ul>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Free Mobile App</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Spotify Plans</h4>
+      <ul>
+        <li><a href="#">Premium Individual</a></li>
+        <li><a href="#">Premium Duo</a></li>
+        <li><a href="#">Premium Family</a></li>
+        <li><a href="#">Premium Student</a></li>
+        <li><a href="#">Spotify Free</a></li>
+      </ul>
+    </div>
+    <div class="footer-socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <ul>
+      <li><a href="#">Legal</a></li>
+      <li><a href="#">Privacy Center</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Cookies</a></li>
+      <li><a href="#">About Ads</a></li>
+      <li><a href="#">Accessibility</a></li>
+    </ul>
+    <p>&copy; 2025 Spotify AB</p>
+  </div>
+</footer>
+
+           
+        </div>
+
+        <div class="player">
+              <div class="album">
+                <div class="song-pic">
+                    <img src="./Photos/wavy.png">
+                </div>
+                
+                <div class="song-desc">
+                    <p class="song-title">Wavy</p>
+                    <p class="artist">Karan Aujla</p>
+                </div>
+
+                <div class="actions">
+                    <img src="./Photos/album_icon1.png">
+                    <img src="./Photos/album_icon2.png" style="height: 2.5rem;">
+                </div>
+              </div>
+
+              <div class="control">
+                <div class="music-player">
+                <img src="./Photos/player_icon1.png" class="control-icons">
+                <img src="./Photos/player_icon2.png" class="control-icons">
+                <img src="./Photos/player_icon3.png" class="control-icons pause">
+                <img src="./Photos/player_icon4.png" class="control-icons">
+                <img src="./Photos/player_icon5.png" class="control-icons">
+
+                </div>
+
+                <div class="playback-bar">
+                    <span class="curr-time">0:00</span>
+                    <input type="range" min="0" max="100" class="progress">
+                    <span class="total-time">2:59</span>
+                </div>
+              </div>
+
+              <div class="options">
+                <img src="./Photos/controls_icon1.png" class="opt1">
+                <img src="./Photos/controld_icon2.png" class="opt2">
+                <img src="./Photos/controls_icon3.png" class="opt3">
+                <img src="./Photos/controls_icon4.png" class="opt4">
+                <img src="./Photos/controls_icon5.png" class="opt5">
+                <div class="sound">
+                    
+                    <input type="range" min="0" max="100" class="progress">
+                    
+                </div>
+                
+              </div>
+        </div>
+    </div>
+</body>
+
+</html>

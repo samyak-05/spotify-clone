@@ -1,0 +1,548 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+    overflow: hidden;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+}
+
+/* Styles for Sidebar*/
+
+.sidebar {
+    background-color: #000;
+    width: 340px;
+    border-radius: 1rem;
+}
+
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0rem 1.5rem 0 1.5rem;
+}
+
+.navigation-bar {
+    background-color: #121212;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    height: 100px;
+}
+
+.nav-option {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    transition: 0.7s;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover {
+    opacity: 1;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    margin: 0.25rem;
+    justify-content: space-between;
+    transition: 0.7s;
+    height: 2rem;
+}
+
+.lib {
+    opacity: 0.7;
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.lib:hover {
+    opacity: 1;
+}
+
+.lib img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i {
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+.icons i:hover {
+    opacity: 1;
+}
+
+.box {
+    background-color: #232323;
+    margin: 0.75rem 0 0.75rem 0;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.65rem 0.8rem;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.caption {
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    opacity: 0.85;
+}
+
+.btn-lib {
+    background-color: whitesmoke;
+    border-radius: 12.5rem;
+    border: none;
+    font-weight: 700;
+    height: 2rem;
+    width: fit-content;
+    padding: 0.25rem 1rem;
+    margin: 0.5rem;
+}
+
+.btn-lib:hover {
+    opacity: 0.7;
+}
+
+/*Styles for center content*/
+
+.main-top {
+    position: sticky;
+    background-color: #121212;
+    height: 2rem;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+
+.main-top img {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 0.75rem;
+    background-color: black;
+    border-radius: 50%;
+    padding: 0.2rem;
+}
+
+.main-top img:hover {
+    opacity: 0.7;
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn i {
+    margin-right: 0.25rem;
+    font-size: 1.1rem;
+}
+
+.nav-item {
+    margin-right: 1.5rem;
+}
+
+.profile {
+    padding-right: 1rem;
+    font-size: 1.1rem;
+}
+
+@media(max-width: 968px) {
+    .hide {
+        display: none;
+    }
+}
+
+.card-container {
+    display: flex;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.card:hover {
+    background-color: rgba(35, 35, 35, 0.7);
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-desc {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.spotify-footer {
+  background-color: #121212;
+  color: white;
+  padding: 3rem 2rem;
+  font-size: 0.9rem;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #333;
+  padding-bottom: 2rem;
+}
+
+.footer-column h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  color: white;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-socials a {
+  background-color: #333;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-socials a:hover {
+  background-color: #555;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.footer-bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+  margin: 0 0 10rem 0;
+}
+
+.footer-bottom ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.footer-bottom ul li a:hover {
+  color: white;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.play {
+    height: 4.5rem;
+    width: 7.5rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8rem;
+    left: 5.5rem;
+    display: none;
+
+}
+
+.card:hover .play {
+    display: block;
+}
+
+/*Styles for Music Player*/
+
+.player {
+    bottom: 0px;
+    height: 72px;
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.song-pic {
+    margin: 1rem 2rem 1rem 2rem;
+    display: flex;
+}
+
+.song-pic img {
+    height: 3rem;
+
+}
+
+.song-desc {
+    margin-left: -5rem;
+}
+
+.song-title {
+    font-weight: 600;
+    margin-left: -2rem;
+}
+
+.artist {
+    opacity: 0.7;
+    font-size: 1rem;
+    margin-left: -2rem;
+    line-height: 0.5rem;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.actions img {
+    height: 1.75rem;
+    margin-right: 1rem;
+    right: 3rem;
+    opacity: 0.8;
+}
+
+.actions img:hover {
+    opacity: 1;
+}
+
+@media(max-width:1347px ){
+    .song-title,.artist{
+        display: none;
+    }
+}
+
+.control {
+    width: 50%;
+
+}
+
+
+.music-player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-icons {
+    height: 1.25rem;
+
+    opacity: 0.7;
+    margin-right: 1.75rem;
+
+}
+
+.control-icons:hover {
+    opacity: 1;
+}
+
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pause {
+    opacity: 1;
+    height: 2rem;
+    width: 2rem;
+}
+
+.pause:hover {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.progress {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    height: 0.2rem;
+    border-radius: 6.5rem;
+}
+
+.progress::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    margin-top: -6px;
+}
+
+.options {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3rem;
+}
+
+.options img:hover{
+    opacity: 1;
+}
+
+.options img{
+    opacity: 0.7;
+   
+}
+
+.opt1,.opt2{
+    height: 2.2rem;
+    margin-right: 1rem;
+}
+
+.opt3{
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.opt4{
+     height: 1.2rem;
+    margin-right: 1rem;
+}
+
+.opt5{
+    height: 2.15rem;
+    margin-right: 1rem
+
+}
+
+.sound{
+    display: flex;
+    align-items: center;
+    margin-right: -2rem;
+}
+
+/*Styles for scrollbar*/
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #535353;
+    border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b3b3b3;  
+}
+
+
+
+
+
+
